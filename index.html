@@ -14,9 +14,55 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="dark:text-gray-200 dark:bg-slate-900">
     <!-- header -->
-    <header></header>
+    <header
+      class="fixed xl:block w-full py-4 lg:px-0 px-5 z-[999] duration-300"
+    >
+      <nav class="flex justify-between items-center max-w-6xl mx-auto px-2">
+        <div class="flex gap-4 items-center">
+          <div
+            class="bg-primary text-white rounded-full size-10 text-xl grid place-items-center"
+          >
+            D
+          </div>
+          <div>
+            <h4 class="font-bold text-lg uppercase">Diandra Vieri</h4>
+            <p class="text-xs">Profile</p>
+          </div>
+        </div>
+        <ul class="gap-10 md:flex hidden hover:*:text-primary *:duration-200">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+          <li class="theme-switch">
+            <i class="fa-solid fa-circle-half-stroke cursor-pointer"></i>
+          </li>
+        </ul>
+        <div class="flex items-center gap-6">
+          <a href="#contact">
+            <button class="btn btn-outline md:!flex !hidden">
+              <i class="fa-regular fa-paper-plane"></i> Let's Talk
+            </button>
+          </a>
+          <span class="theme-switch md:hidden">
+            <i class="fa-solid fa-circle-half-stroke cursor-pointer"></i>
+          </span>
+          <span id="menubar" class="cursor-pointer md:hidden text-xl">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </div>
+      </nav>
+    </header>
 
     <!-- backdrop -->
     <span></span>
