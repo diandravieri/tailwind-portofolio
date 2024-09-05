@@ -22,7 +22,7 @@
       <nav class="flex justify-between items-center max-w-6xl mx-auto px-2">
         <div class="flex gap-4 items-center">
           <div
-            class="bg-primary text-white rounded-full size-10 text-xl grid place-items-center"
+            class="bg-yellow-500 text-white rounded-full size-10 text-xl grid place-items-center"
           >
             D
           </div>
@@ -31,7 +31,7 @@
             <p class="text-xs">Profile</p>
           </div>
         </div>
-        <ul class="gap-10 md:flex hidden hover:*:text-primary *:duration-200">
+        <ul class="gap-10 md:flex hidden hover:*:text-yellow-400 *:duration-200">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -74,7 +74,86 @@
     <ul></ul>
 
     <!-- Home -->
-    <section id="home"></section>
+    <section
+      id="home"
+      class="min-h-screen container grid place-items-center relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-heroLight before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-heroDark"
+    >
+      <div
+        class="w-full pt-20 grid md:grid-cols-6 h-full items-center max-w-6xl justify-around"
+      >
+        <div
+          class="lg:col-span-2 sm:pl-2 md:col-span-3 md:text-left text-center"
+        >
+          <div>
+            <h5 class="font-medium text-gray-600 dark:text-gray-200">
+              Hello Welcome
+            </h5>
+            <h1
+              class="sm:text-5xl text-4xl dark:text-white !leading-normal relative font-medium"
+            >
+              I'm <span class="text-yellow-400">Diandra Vieri</span> <br />
+              Website Designer
+            </h1>
+            <button class="btn btn-filled mt-5">
+              <i class="fa-regular fa-envelope"></i> Hire Me
+            </button>
+            <button
+              class="font-semibold dark:text-gray-200 border-b-2 border-gray-700 ml-4"
+            >
+              <i class="fa-solid fa-up-right-from-square"></i> See Portfolio
+            </button>
+          </div>
+          <div class="md:w-96 md:ml-auto flex mt-9 gap-2 dark:text-gray-300">
+            <i class="fa-solid fa-border-all mt-0.5 md:inline-block hidden"></i>
+            <p class="text-xs text-balance leading-5 max-w-md px-2 mx-auto">
+              Hello my name is Diandra Vieri Dwi Airlangga,<br>I am a passionate and creative Graphic Designer <br>
+              and I am a vocational student at BAZMA IT Vocational School
+            </p>
+          </div>
+          <div
+            class="flex items-center md:justify-end justify-center dark:text-gray-200 text-gray-600 gap-6 mt-9"
+          >
+            <p class="text-xs">Follow Us</p>
+            <div class="flex justify-end gap-3">
+              <a href="https://github.com/diandravieri" class="social-icon">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.youtube.com/@user-xk2gk1cb6t" class="social-icon">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/diandravieri_22" class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-2 md:col-span-3">
+          <img
+            src="./assets/Andra2-removebg-preview (1).png"
+            class="w-2/3 mx-auto md:w-full max-w-96 md:mt-0 mt-5"
+            alt=""
+          />
+        </div>
+        <div
+          class="lg:col-span-2 md:col-span-6 lg:bg-gradient-to-l md:bg-none mt-2 bg-gradient-to-l dark:from-slate-800 from-gray-100 lg:h-96 md:h-auto h-96 w-full"
+        >
+          <ul
+            class="text-2xl data-[slot=count]:*:text-3xl data-[slot=count]:*:font-bold leading-[3.14rem] text-center pt-5 lg:block md:flex items-center justify-between"
+          >
+            <li data-slot="count">4+</li>
+            <li>Year of <span class="text-yellow-400">Experience</span></li>
+            <br />
+            <li data-slot="count">8+</li>
+            <li>Completed <span class="text-yellow-400">Projects</span></li>
+            <li>
+              <button class="btn btn-outline lg:mt-10 md:mt-0 mt-10">
+                <i class="fa-solid fa-download"></i> Download CV
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- About -->
     <section id="about"></section>
