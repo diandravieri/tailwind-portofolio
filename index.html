@@ -191,8 +191,29 @@
     <script type="module" src="/main.js"></script>
 
     <!-- sticky nav script -->
+    <script type="module" src="/main.js"></script>
     <script>
       const header = document.querySelector("header");
+
+      const toggleClasses = (element, classes, condition) => {
+        classes.forEach((className) => {
+          element.classList.toggle(className, condition);
+        });
+      };
+
+      window.addEventListener("scroll", () => {
+        toggleClasses(
+          header,
+          [
+            "shadow-lg",
+            "dark:sm:bg-slate-900",
+            "dark:bg-slate-800",
+            "dark:text-white",
+            "bg-white",
+          ],
+          window.scrollY > 0
+        );
+      });
     </script>
   </body>
 </html>
